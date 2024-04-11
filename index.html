@@ -39,9 +39,6 @@
                 <a href="index.html" class="nav__item-link active">Home</a>
               </li><!-- /.nav-item -->
               <li class="nav__item has-dropdown">
-                <a href="about-us.html" class="nav__item-link">About Us</a>
-              </li><!-- /.nav-item -->
-              <li class="nav__item has-dropdown">
                 <a href="services.html" class="nav__item-link">Resources</a>
               </li><!-- /.nav-item -->
             </ul><!-- /.navbar-nav -->
@@ -66,9 +63,6 @@
                   <h2 class="slide__title">Energizing Society Through Reliable Energy!</h2>
                   <p class="slide__desc">Take the first step towards a brighter, cleaner future by partnering with GreeenLiving today!</p>
                   <div class="d-flex">
-                    <a href="about-us.html" class="btn btn__primary mr-30">
-                      <i class="icon-arrow-right"></i><span>More About Us</span>
-                    </a>
                   </div>
                 </div><!-- /.slide__body -->
               </div><!-- /.col-xl-8 -->
@@ -185,7 +179,7 @@
                 <div class="service__body">
                   <h4 class="service__title">Energy-Efficient Windows and Insulation</h4>
                   <p class="service__desc">Triple-pane windows with low-emissivity coatings and improved framing materials significantly reduce heat transfer.</p>
-                  <a href="services-single-service.html" class="btn btn__secondary btn__outlined btn__custom">
+                  <a href="windows.html" class="btn btn__secondary btn__outlined btn__custom">
                     <span>Read More</span>
                     <i class="icon-arrow-right"></i>
                   </a>
@@ -199,7 +193,7 @@
                 <div class="service__body">
                   <h4 class="service__title">Smart Thermostats and Energy Management Systems</h4>
                   <p class="service__desc">Optimizing energy usage by adjusting the heating and cooling settings based on observed patterns.</p>
-                  <a href="services-single-service.html" class="btn btn__secondary btn__outlined btn__custom">
+                  <a href="thermostats.html" class="btn btn__secondary btn__outlined btn__custom">
                     <span>Read More</span>
                     <i class="icon-arrow-right"></i>
                   </a>
@@ -213,7 +207,7 @@
                 <div class="service__body">
                   <h4 class="service__title">Heat Pump Water Heaters</h4>
                   <p class="service__desc">Offering an energy-efficient alternative to traditional electric water heaters by utilizing ambient heat from surrounding air and ground.</p>
-                  <a href="services-single-service.html" class="btn btn__secondary btn__outlined btn__custom">
+                  <a href="pumps.html" class="btn btn__secondary btn__outlined btn__custom">
                     <span>Read More</span>
                     <i class="icon-arrow-right"></i>
                   </a>
@@ -255,3 +249,44 @@
   <script src="assets/js/main.js"></script>
 </body>
 </html>
+<script>
+  window.onload = function() {
+    var bar = "{{ bar }}";
+    var active = "{{ active }}";
+
+    if (bar == "") {
+      document.getElementById(active).classList.add("active");
+      document.getElementById(active).classList.remove("collapsed");
+    }
+    else {
+      document.getElementById(bar).classList.remove("collapsed");
+      document.getElementById(bar + "-components-nav").classList.add("show");
+      document.getElementById(active).classList.add("active");
+    }
+  };
+document.onkeydown = function(e) {
+    if (event.keyCode === 13) {
+            if (document.activeElement.id == "spelling") {
+                spell();
+            }
+            else {
+                new_tag();
+            }
+        }
+  if(event.keyCode == 123) {
+     return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+     return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+     return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+     return false;
+  }
+  if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+     return false;
+  }
+}
+</script>
