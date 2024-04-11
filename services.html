@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
+<body oncontextmenu="return false;">
   <div class="wrapper">
     <div class="preloader">
       <div class="loading"><span></span><span></span><span></span><span></span></div>
@@ -54,6 +54,16 @@
                     <a href="pumps.html" class="nav__item-link">Heat Pump Water Heaters</a>
                   </li><!-- /.nav-item -->
                 </ul><!-- /.dropdown-menu -->
+              </li><!-- /.nav-item -->
+              <li class="nav__item has-dropdown">
+                <a href="rebate.html" class="nav__item-link">Tax Rebate Info</a>
+              </li><!-- /.nav-item -->
+              <li class="nav__item has-dropdown">
+                <a href="external.html" class="nav__item-link">External Links & Sources</a>
+              </li><!-- /.nav-item -->
+              <li class="nav__item has-dropdown">
+                <a href="documents.html" class="nav__item-link">Documents</a>
+              </li><!-- /.nav-item -->
               </li><!-- /.nav-item -->
             </ul><!-- /.navbar-nav -->
             <button class="close-mobile-menu d-block d-lg-none"><i class="fas fa-times"></i></button>
@@ -184,20 +194,6 @@
 </body>
 </html>
 <script>
-  window.onload = function() {
-    var bar = "{{ bar }}";
-    var active = "{{ active }}";
-
-    if (bar == "") {
-      document.getElementById(active).classList.add("active");
-      document.getElementById(active).classList.remove("collapsed");
-    }
-    else {
-      document.getElementById(bar).classList.remove("collapsed");
-      document.getElementById(bar + "-components-nav").classList.add("show");
-      document.getElementById(active).classList.add("active");
-    }
-  };
 document.onkeydown = function(e) {
     if (event.keyCode === 13) {
             if (document.activeElement.id == "spelling") {

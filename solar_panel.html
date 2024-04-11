@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
+<body oncontextmenu="return false;">
   <div class="wrapper">
     <div class="preloader">
       <div class="loading"><span></span><span></span><span></span><span></span></div>
@@ -56,6 +56,16 @@
                     <a href="pumps.html" class="nav__item-link">Heat Pump Water Heaters</a>
                   </li><!-- /.nav-item -->
                 </ul><!-- /.dropdown-menu -->
+              </li><!-- /.nav-item -->
+              <li class="nav__item has-dropdown">
+                <a href="rebate.html" class="nav__item-link">Tax Rebate Info</a>
+              </li><!-- /.nav-item -->
+              <li class="nav__item has-dropdown">
+                <a href="external.html" class="nav__item-link">External Links & Sources</a>
+              </li><!-- /.nav-item -->
+              <li class="nav__item has-dropdown">
+                <a href="documents.html" class="nav__item-link">Documents</a>
+              </li><!-- /.nav-item -->
               </li><!-- /.nav-item -->
             </ul><!-- /.navbar-nav -->
             <button class="close-mobile-menu d-block d-lg-none"><i class="fas fa-times"></i></button>
@@ -109,10 +119,10 @@
                       <a href="solar_panel.html" style="background-color: #4aab3d; color: white;"><i class="icon-arrow-right"></i><span>Solar Panels</span></a>
                     </li>
                     <li>
-                      <a href="windows.html"><i class="icon-arrow-right"></i><span>Energy-Efficient Windows and Insulation</span></a>
+                      <a href="windows.html"><i class="icon-arrow-right"></i><span>Energy-Efficient Windows</span></a>
                     </li>
                     <li>
-                      <a href="thermostats.html"><i class="icon-arrow-right"></i><span>Smart Thermostats and Energy Management Systems</span></a>
+                      <a href="thermostats.html"><i class="icon-arrow-right"></i><span>Smart Thermostats</span></a>
                     </li>
                     <li>
                       <a href="pumps.html"><i class="icon-arrow-right"></i><span>Heat Pump Water Heaters</span></a>
@@ -159,6 +169,11 @@
                 <p>Your browser does not support iframes.</p>
             </iframe>
             </div><!-- /.row -->
+            <div class="text__block mb-30">
+              <h5 class="text__block-title">Benefits</h5>
+              <p class="text__block-desc">Solar panels are an efficient addition to your home, quietly converting sunlight into electricity. They're easy to install and come with tax benefits. Studies suggest you could save up to $1,500 annually by switching to solar power. While installation costs vary from $10,000 to $25,000 depending on your home size and sunlight exposure, the long-term savings make it a worthwhile investment.  
+              </p>
+            </div><!-- /.text-block -->
           </div><!-- /.col-lg-8 -->
         </div><!-- /.row -->
       </div><!-- /.container -->
@@ -193,20 +208,6 @@
 <!-- Mirrored from 7oroof.com/demos/solatec/services-single-service.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 28 Mar 2024 02:27:55 GMT -->
 </html>
 <script>
-  window.onload = function() {
-    var bar = "{{ bar }}";
-    var active = "{{ active }}";
-
-    if (bar == "") {
-      document.getElementById(active).classList.add("active");
-      document.getElementById(active).classList.remove("collapsed");
-    }
-    else {
-      document.getElementById(bar).classList.remove("collapsed");
-      document.getElementById(bar + "-components-nav").classList.add("show");
-      document.getElementById(active).classList.add("active");
-    }
-  };
 document.onkeydown = function(e) {
     if (event.keyCode === 13) {
             if (document.activeElement.id == "spelling") {

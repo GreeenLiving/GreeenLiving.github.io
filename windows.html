@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
+<body oncontextmenu="return false;">
   <div class="wrapper">
     <div class="preloader">
       <div class="loading"><span></span><span></span><span></span><span></span></div>
@@ -56,6 +56,15 @@
                     <a href="pumps.html" class="nav__item-link">Heat Pump Water Heaters</a>
                   </li><!-- /.nav-item -->
                 </ul><!-- /.dropdown-menu -->
+              </li><!-- /.nav-item -->
+              <li class="nav__item has-dropdown">
+                <a href="rebate.html" class="nav__item-link">Tax Rebate Info</a>
+              </li><!-- /.nav-item -->
+              <li class="nav__item has-dropdown">
+                <a href="external.html" class="nav__item-link">External Links & Sources</a>
+              </li><!-- /.nav-item -->
+              <li class="nav__item has-dropdown">
+                <a href="documents.html" class="nav__item-link">Documents</a>
               </li><!-- /.nav-item -->
             </ul><!-- /.navbar-nav -->
             <button class="close-mobile-menu d-block d-lg-none"><i class="fas fa-times"></i></button>
@@ -110,10 +119,10 @@
                         <a href="solar_panel.html"><i class="icon-arrow-right"></i><span>Solar Panels</span></a>
                       </li>
                       <li>
-                        <a href="windows.html" style="background-color: #4aab3d; color: white;"><i class="icon-arrow-right"></i><span>Energy-Efficient Windows and Insulation</span></a>
+                        <a href="windows.html" style="background-color: #4aab3d; color: white;"><i class="icon-arrow-right"></i><span>Energy-Efficient Windows</span></a>
                       </li>
                       <li>
-                        <a href="thermostats.html"><i class="icon-arrow-right"></i><span>Smart Thermostats and Energy Management Systems</span></a>
+                        <a href="thermostats.html"><i class="icon-arrow-right"></i><span>Smart Thermostats</span></a>
                       </li>
                       <li>
                         <a href="pumps.html"><i class="icon-arrow-right"></i><span>Heat Pump Water Heaters</span></a>
@@ -155,6 +164,11 @@
               <p class="text__block-desc">This technology is a cheaper alternative to solar panels and costs from $150–$4,000. The price mainly depends on the size of windows, number of windows, window material, etc.   
               </p>
             </div><!-- /.text-block -->
+            <div class="text__block mb-30">
+              <h5 class="text__block-title">Benefits</h5>
+              <p class="text__block-desc">Triple-pane windows with low-emissivity coatings and advanced framing materials are a smart choice for maintaining indoor comfort while reducing energy costs. These windows act as a barrier against heat loss in winter and heat gain in summer, reducing the need for heating and cooling. Additionally, insulation materials like aerogels and vacuum insulation panels further enhance energy efficiency. Studies indicate potential savings of up to 30% on heating and cooling bills by switching to these energy-efficient windows. What's more, they are a cost-effective option, ranging from $150 to $4,000 depending on size and materials, making them suitable for various budgets and home sizes. With these upgrades, you can enjoy a more comfortable home year-round while saving money on energy expenses.  
+              </p>
+            </div><!-- /.text-block -->
           </div><!-- /.col-lg-8 -->
         </div><!-- /.row -->
       </div><!-- /.container -->
@@ -189,20 +203,6 @@
 <!-- Mirrored from 7oroof.com/demos/solatec/services-single-service.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 28 Mar 2024 02:27:55 GMT -->
 </html>
 <script>
-  window.onload = function() {
-    var bar = "{{ bar }}";
-    var active = "{{ active }}";
-
-    if (bar == "") {
-      document.getElementById(active).classList.add("active");
-      document.getElementById(active).classList.remove("collapsed");
-    }
-    else {
-      document.getElementById(bar).classList.remove("collapsed");
-      document.getElementById(bar + "-components-nav").classList.add("show");
-      document.getElementById(active).classList.add("active");
-    }
-  };
 document.onkeydown = function(e) {
     if (event.keyCode === 13) {
             if (document.activeElement.id == "spelling") {

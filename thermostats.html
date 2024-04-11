@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
+<body oncontextmenu="return false;">
   <div class="wrapper">
     <div class="preloader">
       <div class="loading"><span></span><span></span><span></span><span></span></div>
@@ -56,6 +56,16 @@
                     <a href="pumps.html" class="nav__item-link">Heat Pump Water Heaters</a>
                   </li><!-- /.nav-item -->
                 </ul><!-- /.dropdown-menu -->
+              </li><!-- /.nav-item -->
+              <li class="nav__item has-dropdown">
+                <a href="rebate.html" class="nav__item-link">Tax Rebate Info</a>
+              </li><!-- /.nav-item -->
+              <li class="nav__item has-dropdown">
+                <a href="external.html" class="nav__item-link">External Links & Sources</a>
+              </li><!-- /.nav-item -->
+              <li class="nav__item has-dropdown">
+                <a href="documents.html" class="nav__item-link">Documents</a>
+              </li><!-- /.nav-item -->
               </li><!-- /.nav-item -->
             </ul><!-- /.navbar-nav -->
             <button class="close-mobile-menu d-block d-lg-none"><i class="fas fa-times"></i></button>
@@ -110,10 +120,10 @@
                         <a href="solar_panel.html"><i class="icon-arrow-right"></i><span>Solar Panels</span></a>
                       </li>
                       <li>
-                        <a href="windows.html"><i class="icon-arrow-right"></i><span>Energy-Efficient Windows and Insulation</span></a>
+                        <a href="windows.html"><i class="icon-arrow-right"></i><span>Energy-Efficient Windows</span></a>
                       </li>
                       <li>
-                        <a href="thermostats.html" style="background-color: #4aab3d; color: white;"><i class="icon-arrow-right"></i><span>Smart Thermostats and Energy Management Systems</span></a>
+                        <a href="thermostats.html" style="background-color: #4aab3d; color: white;"><i class="icon-arrow-right"></i><span>Smart Thermostats</span></a>
                       </li>
                       <li>
                         <a href="pumps.html"><i class="icon-arrow-right"></i><span>Heat Pump Water Heaters</span></a>
@@ -155,6 +165,11 @@
               <p class="text__block-desc">Wi-Fi-based thermostats can be bought for under $300 and bring a lot of change for a relatively small price. The convenience of controlling temperature from an app will ensure that energy isn’t wasted. For those who want to replace their HVAC system with a more efficient one, the price will be around $1000.    
               </p>
             </div><!-- /.text-block -->
+            <div class="text__block mb-30">
+              <h5 class="text__block-title">Benefits</h5>
+              <p class="text__block-desc">Smart thermostats and energy management systems optimize HVAC efficiency, adapting to comfort needs. With sensors and algorithms, they curb energy waste while ensuring coziness. Affordable Wi-Fi-enabled thermostats start under $300, offering remote control. Upgrading to efficient systems costs around $1000 but yields long-term savings. They're the smart choice for a comfortable, energy-efficient home.  
+              </p>
+            </div><!-- /.text-block -->
           </div><!-- /.col-lg-8 -->
         </div><!-- /.row -->
       </div><!-- /.container -->
@@ -189,20 +204,6 @@
 <!-- Mirrored from 7oroof.com/demos/solatec/services-single-service.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 28 Mar 2024 02:27:55 GMT -->
 </html>
 <script>
-  window.onload = function() {
-    var bar = "{{ bar }}";
-    var active = "{{ active }}";
-
-    if (bar == "") {
-      document.getElementById(active).classList.add("active");
-      document.getElementById(active).classList.remove("collapsed");
-    }
-    else {
-      document.getElementById(bar).classList.remove("collapsed");
-      document.getElementById(bar + "-components-nav").classList.add("show");
-      document.getElementById(active).classList.add("active");
-    }
-  };
 document.onkeydown = function(e) {
     if (event.keyCode === 13) {
             if (document.activeElement.id == "spelling") {
